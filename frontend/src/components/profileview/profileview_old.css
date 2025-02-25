@@ -1,0 +1,168 @@
+/* General Container Styling */
+.container-profile {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #f3f3f3, #e9e9e9);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Header Styling */
+.container-profile .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-profile h2 {
+    color: #333;
+    font-size: 2.2rem;
+    margin: 0;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+.container-profile .logout-btn {
+    background: #d94040;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(255, 90, 90, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.container-profile .logout-btn:hover {
+
+    background: #ff5a5a;
+    transform: scale(1.05);
+}
+.container-profile .change-pass-btn {
+    background: yellow;
+    color:rgb(255, 255, 255);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(255, 252, 90, 0.902);
+    transition: background 0.3s, transform 0.2s;
+    text-decoration-color: black;
+}
+.change-pass-p{
+    color: black;
+}
+.container-profile .change-pass-btn:hover {
+
+    background: yellow;
+    transform: scale(1.05);
+}
+
+/* Profile Picture Section */
+.container-profile .profile-pic-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-profile .profile-pic-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #eef9f2;
+    border: 4px solid #4caf50;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+    transition: transform 0.3s;
+}
+
+.container-profile .profile-pic-preview:hover {
+    transform: scale(1.1);
+}
+
+/* Profile Details Section */
+.container-profile .profile-details {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-profile .profile-detail {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button Styling */
+.container-profile .btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto;
+    padding: 12px 16px;
+
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+
+}
+
+.container-profile .edit-btn {
+    background: #00796b;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+.container-profile .edit-btn:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container-profile {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .container-profile h2 {
+        font-size: 1.8rem;
+    }
+
+    .container-profile .btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 5px #4caf50, 0 0 10px #4caf50;
+    }
+
+    to {
+        text-shadow: 0 0 10px #388e3c, 0 0 20px #388e3c;
+    }
+}

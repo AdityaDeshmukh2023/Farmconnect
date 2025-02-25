@@ -1,0 +1,67 @@
+/* Feed Container */
+.feed {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    height: calc(100vh - 80px); /* Full height minus header */
+    padding: 0 20px;
+    background-color: #fafafa; /* Light background for the page */
+}
+
+/* Left Wrapper (Scrollable and Centered) */
+.feedWrapperleft {
+    width: 100%;
+    max-width: 700px; /* Limit the width for consistency */
+    margin-right: 30px; /* Space between left and right wrappers */
+    overflow-y: scroll; /* Allow vertical scrolling */
+    height: 100%; /* Full height */
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.feedWrapperleft::-webkit-scrollbar {
+    width: 0px; /* Hide the scrollbar */
+}
+
+.feedWrapperleft::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background */
+}
+
+.feedWrapperleft::-webkit-scrollbar-thumb {
+    background: transparent; /* Transparent thumb */
+}
+
+/* Right Wrapper (Aligned to the Right) */
+.feedWrapperRight {
+    width: 100%;
+    max-width: 600px; /* Limit the right side width */
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    position: sticky; /* Make it sticky to the right */
+    top: 80px; /* Align with the top of the page */
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .feed {
+        flex-direction: column; /* Stack left and right wrappers on top of each other */
+        padding: 10px;
+    }
+
+    .feedWrapperleft {
+        width: 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* No margin on smaller screens */
+    }
+
+    .feedWrapperRight {
+        width: 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        margin-top: 20px; /* Space between left and right sections */
+    }
+}

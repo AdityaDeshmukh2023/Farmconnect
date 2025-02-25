@@ -1,0 +1,89 @@
+.agriculture-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #e9f5e1, #f7faff);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+.agriculture-slider-items {
+    display: flex;
+    animation: slider-animation 20s infinite linear;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.agriculture-slider-item {
+    flex-shrink: 0;
+    width: 280px;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.agriculture-slider-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.agriculture-slider-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b7a0b;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.agriculture-slider-item-description {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #333333;
+    margin-bottom: 15px;
+    font-family: "Arial", sans-serif;
+}
+
+.agriculture-read-more-btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #2b7a0b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.agriculture-read-more-btn:hover {
+    background-color: #237207;
+    transform: scale(1.05);
+}
+
+.agriculture-slider-loading {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #666666;
+    font-style: italic;
+}
+
+@keyframes slider-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

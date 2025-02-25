@@ -1,0 +1,123 @@
+/* sidebar.css */
+.sidebar * {
+    padding: 0;
+    text-decoration: none;
+    
+  }
+  
+  .sidebar .slicontainer {
+    display: flex;
+    margin-top: 0;
+    
+  }
+  
+  .sidebarLinks{
+    margin-top: 10px;
+  
+    
+  }
+  .sidebar main {
+    width: 95%;
+    /* padding: 15px; */
+    
+    margin-top: 0;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 80px; /* Adjust this value if needed */
+  }
+  
+  /* Set default width of the sidebar to 100px */
+  .sidebar .sidebarr {
+    background: #1B4332;
+    color: #fff;
+    height: 100%;
+    width: 80px; /* Sidebar width when closed */
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  /* Adjust sidebar width when it's open */
+  .sidebar.open .sidebarr {
+    width: 250px; /* Sidebar width when open */
+  }
+  
+  /* Sidebar top section styles */
+  /* Sidebar top section styles */
+  .sidebar .top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    position: sticky; /* Make it sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1001; /* Ensure it stays above other elements */
+    background: #1B4332; /* Match sidebar background */
+  }
+  
+  /* Sidebar logo styles */
+  .sidebar .logo {
+    font-size: 30px;
+  }
+  
+  /* Sidebar bars (toggle button) styles */
+  .sidebar .bars {
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  .sidebarLinkContainer{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .sidebar .link {
+    display: flex;
+    color: #fff;
+    padding: 10px 17px;
+    gap: 20px;
+    transition: all 0.5s;
+    margin-top: 20px;
+  }
+  
+
+  .sidebar .link:hover {
+    background: lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+  }
+  
+  .active {
+    background: lightskyblue;
+    color: #000;
+    
+  }
+  
+  .icon, .link_text {
+    font-size: 20px;
+  }
+  
+  /* Adjust content position when sidebar is open */
+  .app-container.sidebar-open main {
+    margin-left: 250px; /* Content margin when sidebar is open */
+  }
+  
+  /* Ensure the content area is scrollable */
+  body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Adjust content position when sidebar is closed */
+  .app-container.sidebar-closed main {
+    margin-left: 100px; /* Adjusted margin when sidebar is closed (shifted right) */
+  }
+  

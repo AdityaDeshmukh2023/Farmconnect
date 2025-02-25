@@ -1,0 +1,111 @@
+.cpost{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow : 0px 0px 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    margin: 30px 0px;
+
+}
+
+.cpostWrapper{
+    padding: 10px;
+}
+
+.cpostTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cpostTopLeft{
+    display: flex;
+    align-items: center;
+}
+
+.cpostProfileImg{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cpostUserName{
+    font-style: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.cpostDate{
+    font-style: 12px;
+
+}
+.cpostCenter{
+    margin: 20px 0;
+
+}
+.cpostImg{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.cpostBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cpostBottomLeft{
+    display: flex;
+    align-items: center;
+}
+
+.clikeIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.cdislikeIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.cpostLikeCounter{
+    font-size: 15px;
+
+    
+}
+.cpostCommentText{
+ cursor: pointer;
+ border-bottom: 1px dashed gray;
+ font-size: 15px;       
+}
+.followButton {
+    margin: 0 70px;
+    height: 40px;
+    width: 100px;
+    background-color: #4CAF50; /* Default Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.followButton:hover {
+    background-color: #005f7a; /* Darker Blue */
+}
+
+.followButton.following {
+    background-color: #def8cd; /* Green when following */
+    color: rgb(11, 11, 11);
+}
+.err{
+    font-style: 15px;
+    font-weight: 500;
+    color: red;
+}
+

@@ -1,0 +1,66 @@
+/* General Layout */
+.layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .layoutRight {
+    flex-grow: 1;
+    margin-left: 80px; /* Default margin when sidebar is closed */
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .layout.sidebar-open .layoutRight {
+    margin-left: 250px; /* Margin adjustment when sidebar is open */
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background: #1B4332;
+    color: #fff;
+    height: 100%;
+    width: 80px; /* Default sidebar width when closed */
+    transition: width 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .sidebar-open .sidebar {
+    width: 250px; /* Expanded sidebar width */
+  }
+  
+  /* Other Styles */
+  .sidebarLinks {
+    margin-top: 10px;
+  }
+  
+  .sidebar .top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    background: #1B4332;
+  }
+  
+  .sidebar .link {
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .sidebar .link:hover {
+    background: lightskyblue;
+    color: #000;
+  }
+  
+  .sidebar .link_text {
+    font-size: 16px;
+  }
+  

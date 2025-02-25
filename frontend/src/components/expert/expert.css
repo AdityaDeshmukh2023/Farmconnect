@@ -1,0 +1,136 @@
+.expertcard {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 320px;
+    height: 410px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.expertcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.expertcard .expert-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.expert-card-body {
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.expert-card-body .expertname {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    
+}
+
+.expert-card-body .expertdetails {
+    font-size: 1rem;
+    margin: 8px 0;
+    line-height: 1.4;
+    
+}
+
+.expert-card-body .expertdetails strong {
+    color: #76b852;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .expertcard {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .expert-card-body {
+        padding: 15px;
+    }
+
+    .expert-card-body .expertname {
+        font-size: 1.3rem;
+    }
+
+    .expert-card-body .expertdetails {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .expertcard {
+        width: 100%;
+    }
+
+    .expert-card-body .expertname {
+        font-size: 1.2rem;
+    }
+
+    .expert-card-body .expertdetails {
+        font-size: 0.9rem;
+    }
+}
+
+.expert-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #76b852;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.expert-button:hover {
+    background: #5a9e3c;
+    transform: scale(1.05);
+}
+
+.expert-button:active {
+    transform: scale(1);
+}
+
+.expert-button.sent {
+    background: #4caf50;
+    color: white;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.expert-button.sent:after {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .expert-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .expert-button {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+}

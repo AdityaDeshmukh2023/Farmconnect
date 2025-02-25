@@ -1,0 +1,216 @@
+/* Post Container */
+.post {
+    width: 100%;
+    max-width: 600px; /* Limit the maximum width for consistency */
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+/* Post Wrapper */
+.postWrapper {
+    width: 100%;
+    max-width: 450px; /* Ensure consistency in width */
+    padding: 12px; /* Add internal spacing */
+    /* background-color: #fff; /* White background for contrast */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Post Header */
+.postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postTopLeft {
+    display: flex;
+    align-items: center;
+}
+
+.postProfileImg {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.postUserName {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.postDate {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Post Content */
+.postCenter {
+    margin: 10px 0;
+}
+
+.postText {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Video Container */
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.postVideo {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Video Options */
+.videoOptions {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.videoOption {
+    margin-right: 10px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.videoOption.iactive .vicon {
+    color: #1775ee;
+}
+
+.videoOption.iactive .optionCount {
+    font-weight: bold;
+}
+
+.vicon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.vicon:hover {
+    transform: scale(1.1);
+}
+
+.optionCount {
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 38px;
+    right: 8px;
+}
+
+.optionText {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Post Bottom Right */
+.postBottomRight {
+    margin-top: 10px;
+}
+
+/* Hiding Scrollbars */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .post {
+        margin: 20px;
+    }
+
+    .postWrapper {
+        width: 100%;
+        max-width: 100%; /* Ensure full width on smaller screens */
+        padding: 12px; /* Reduce padding on smaller screens */
+    }
+
+    .postVideo {
+        max-height: 60vh;
+    }
+
+    .videoOptions {
+        right: 5px;
+        bottom: 10px;
+    }
+
+    .vicon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .optionCount {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .post {
+        margin: 15px;
+        border-radius: 8px;
+    }
+
+    .postWrapper {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .postVideo {
+        max-height: 50vh;
+    }
+
+    .videoOptions {
+        right: 5px;
+        bottom: 8px;
+    }
+
+    .vicon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .optionCount {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,130 @@
+/* forget.css */
+.forget-wrapper {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #a3ed81, #a8e063); /* Greenish gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* To position background elements */
+    overflow: hidden; /* Hide overflow from animated elements */
+    color: #fff;
+  }
+  
+  .forget-wrapper::before,
+  .forget-wrapper::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    background: #ffffff;
+    animation: move 10s linear infinite;
+  }
+  
+  .forget-wrapper::before {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: 30%;
+    animation-delay: 0s;
+  }
+  
+  .forget-wrapper::after {
+    width: 300px;
+    height: 300px;
+    bottom: -70px;
+    right: 20%;
+    animation-delay: 5s;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(20px) translateX(-20px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+  
+  .forget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .forget-box {
+    background-color: rgba(52, 83, 2, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 146, 22, 0.3);
+    z-index: 2; /* Ensure the box stays above background elements */
+  }
+  
+  .forget-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .forget-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  .forget-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .forget-btn {
+    width: 100%;
+    padding: 10px;
+    background: #56ab2f; /* Primary green shade */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .forget-btn:hover {
+    background: #a8e063; /* Lighter green shade */
+  }
+  
+  .back-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #56ab2f; /* Green link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: #a8e063; /* Lighter green on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .forget-box {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

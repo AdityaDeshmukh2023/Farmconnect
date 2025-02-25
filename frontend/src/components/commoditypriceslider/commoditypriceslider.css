@@ -1,0 +1,68 @@
+.commoditypriceslider{
+    width: 1420px;
+}
+.commodity-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+  
+  .commodity-slider-items {
+    display: flex;
+    animation: slide 25s infinite linear;
+    height: 200px;
+  }
+  
+  .commodity-slider-item {
+    flex-shrink: 0;
+    width: 200px;
+    margin: 10px;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .commodity-slider-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .commodity-slider-item-price {
+    font-size: 17px;
+    margin: 15px 0;
+  }
+  
+  .commodity-slider-item-market {
+    font-size: 15px;
+    color: #888;
+  }
+  
+  .commodity-slider-loading {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .commodity-slider-error {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    padding: 20px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

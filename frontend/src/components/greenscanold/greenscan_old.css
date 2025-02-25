@@ -1,0 +1,168 @@
+/* General Styles */
+
+.greenscan {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #f4faf5;
+    color: #333;
+}
+
+/* Hero Section */
+.greenscan .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ecfdf5;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.greenscan .hero h1 {
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+
+.greenscan .hero p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.greenscan .hero-image {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.greenscan .cta-button {
+    padding: 0.5rem 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.greenscan .cta-button:hover {
+    background-color: #1e8e50;
+}
+
+/* Upload Section */
+.greenscan .upload-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.greenscan .drop-area {
+    border: 2px dashed #27ae60;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.greenscan .drop-area:hover {
+    background-color: #ecfdf5;
+}
+
+.greenscan .drop-area i {
+    font-size: 3rem;
+    color: #27ae60;
+}
+
+.preview {
+    max-width: 100%;
+    margin-top: 1rem;
+    display: flex;
+}
+
+/* Results Section */
+.results {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.greenscan .result-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 768px) {
+    .greenscan .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .greenscan .hero h1 {
+        font-size: 2rem;
+    }
+
+    .greenscan .hero p {
+        font-size: 0.9rem;
+    }
+
+    .greenscan .hero-image {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .greenscan .cta-button {
+        padding: 0.4rem 1rem;
+        font-size: 1rem;
+    }
+
+    .greenscan .upload-section {
+        padding: 1.5rem;
+    }
+
+    .greenscan .drop-area {
+        padding: 1.5rem;
+    }
+
+    .preview {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .results {
+        padding: 1.5rem;
+    }
+
+    .greenscan .result-card {
+        padding: 0.8rem;
+    }
+}
+
+/* Extra Small Screens (Very Small Mobile) */
+@media screen and (max-width: 480px) {
+    .greenscan .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .greenscan .hero p {
+        font-size: 0.8rem;
+    }
+
+    .greenscan .cta-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .greenscan .drop-area {
+        padding: 1rem;
+    }
+
+    .greenscan .result-card {
+        padding: 0.6rem;
+    }
+}

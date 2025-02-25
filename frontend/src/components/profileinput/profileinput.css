@@ -1,0 +1,152 @@
+/* Ensure Profile Page Styles Don't Affect Landing Page */
+.container-profile {
+    font-family: "Arial", sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Profile Page Heading */
+.container-profile h2 {
+    text-align: center;
+    color: #00796b;
+    font-size: 2.5rem;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+/* Profile Picture Section */
+.container-profile .profile-pic-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-profile .profile-pic-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #d7f8e5;
+    border: 3px dashed #00796b;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.container-profile .profile-pic-preview:hover {
+    transform: scale(1.1);
+}
+
+/* Form Elements (Profile Input Fields) */
+.container-profile input ,.container-profile select,.container-profile textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.container-profile input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #004d40;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling for Profile Page */
+.container-profile .btn-save {
+    padding: 12px 20px;
+    background: #00796b;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+
+.container-profile .btn-save:hover {
+    background: #004d40;
+    transform: scale(1.05);
+}
+
+/* Profile Details Section */
+.container-profile .profile-details {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    background: #f1fff7;
+    animation: fadeIn 0.8s ease;
+}
+
+.container-profile .profile-detail {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #004d40;
+}
+
+/* Profile Picture View in Profile */
+.container-profile #viewProfilePicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #d7f8e5;
+    border: 3px dashed #00796b;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container-profile {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .container-profile .btn {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .container-profile h2 {
+        font-size: 1.8rem;
+    }
+
+    .container-profile input, select, textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 5px #00796b, 0 0 10px #00796b;
+    }
+    to {
+        text-shadow: 0 0 10px #004d40, 0 0 20px #004d40;
+    }
+}

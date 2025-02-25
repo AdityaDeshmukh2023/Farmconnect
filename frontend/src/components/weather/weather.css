@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Basic Reset */
+.weather-app * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main App Container */
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+  background: linear-gradient(180deg, #e3f2fd, #f1f8e9); /* Soft gradient */
+}
+
+/* Container Styling */
+.weather-app .container {
+  max-width: 900px;
+  width: 85%;
+  background: linear-gradient(354deg, #69a742 0%, #9cd97a 100%);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Date Section */
+.weather-app .container_date {
+  font-size: 22px;
+  margin: 10px 0 20px;
+  font-weight: 600;
+  color: #e3f2fd;
+}
+
+/* City Name Section */
+.weather-app .container_city {
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 700;
+  text-decoration: solid;
+}
+
+/* Degree Section */
+.weather-app .container_degree {
+  font-size: 60px;
+  font-weight: 800;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-app .container_degree i {
+  font-size: 30px;
+  color: #ffd54f;
+}
+
+/* Weather Icon */
+.weather-app .container_img {
+  margin: 15px auto;
+  max-width: 120px;
+}
+
+/* Weather Description */
+.weather-app .count_par {
+  font-size: 20px;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+/* Extra Details Section */
+.extra-details.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Prevent wrapping to new lines */
+  gap: 20px; /* Space between columns */
+  margin-top: 20px;
+  color: white;
+}
+
+.extra-details .column1,
+.extra-details .column2 {
+  flex: 1; /* Ensure both columns take equal space */
+  min-width: 200px; /* Minimum width for each column */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.extra-details .column1 p,
+.extra-details .column2 p {
+  margin: 5px 0;
+  text-align: left;
+}
+
+
+.column2{
+  margin-left: 70px;
+}
+.extra-details p i {
+  font-size: 18px;
+  color: #ffd54f;
+}
+
+/* Input and Button Section */
+.weather-app .form {
+  margin-top: 20px;
+}
+
+.weather-app .input {
+  width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px 0 0 15px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.weather-app .input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-app button {
+  padding: 10px 20px;
+  border: none;
+  background: #558b2f;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.weather-app button:hover {
+  background: #33691e;
+}
+
+/* Loader */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #69a742;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .weather-app .container {
+    padding: 15px 20px;
+    width: 95%;
+  }
+
+  .extra-details.row {
+    justify-content: space-between; /* Maintain space between items */
+  }
+
+  .extra-details .column1,
+  .extra-details .column2 {
+    min-width: 200px; /* Ensure minimum width */
+  }
+}
+
+@media (max-width: 768px) {
+  .weather-app .container {
+    padding: 15px 20px;
+    width: 95%;
+  }
+
+  .extra-details.row {
+    justify-content: space-between; /* Maintain space between items */
+  }
+
+  .extra-details .column1,
+  .extra-details .column2 {
+    min-width: 150px; /* Reduce minimum width for smaller screens */
+  }
+
+  .weather-app .input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .weather-app button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-app .container {
+    padding: 12px 15px;
+  }
+
+  .extra-details.row {
+    justify-content: space-between; /* Maintain space between items */
+  }
+
+  .extra-details .column1,
+  .extra-details .column2 {
+    min-width: 150px; /* Reduce minimum width for smaller screens */
+  }
+
+  .weather-app button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

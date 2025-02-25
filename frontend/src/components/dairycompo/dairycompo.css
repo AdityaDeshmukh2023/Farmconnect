@@ -1,0 +1,176 @@
+/* General Styles */
+
+
+.dairyWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* padding-bottom: 20px;
+    padding-right: 20px; */
+    gap: 20px;
+    padding: 20px;
+}
+
+.dairy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Dairy Card Styles */
+.dairy-content {
+    width: 300px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dairy-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.dairy-main-image {
+    display: block;
+    height: 300px; /* Make it box-shaped */
+    object-fit: cover;
+    margin-top: 20px; /* Add padding from the top */
+    border-radius: 10px; /* Optional: add rounded corners */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin: 20px 0;
+}
+.dairy-content:hover .dairy-main-image {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.dairy-text-section {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: self-start; /* Center-align content */
+    padding: 30px; /* Increase padding for better spacing */
+    background: linear-gradient(to bottom right, #c8e6c9, #ffffff);
+    margin-bottom: 20px; /* Space below the text section */
+    border-radius: 10px;
+   
+}
+
+.dairy-title {
+    font-size: 2.5rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #81c784;
+    display: inline-block;
+}
+
+.dairy-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #2e2e2e;
+}
+
+.dairy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: white;
+    background: #388e3c;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.dairy-btn:hover {
+    background: #2e7d32;
+    transform: translateY(-3px);
+}
+
+.dairy-btn:focus {
+    outline: 2px solid #81c784;
+    outline-offset: 2px;
+}
+
+/* Extra Content Styles */
+.dairy-extra-content {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9fbe7;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    border-top: 2px solid #81c784;
+    border-radius: 10px;
+    
+   
+    margin-left: 15px;
+}
+
+.dairy-control-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    color: #4e4e4e;
+}
+
+.dairy-control-list li {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+.dairy-footer {
+    text-align: center;
+    padding: 20px;
+    background: #388e3c;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .dairy-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dairy-content {
+        width: 90%;
+    }
+
+    .dairy-header {
+        font-size: 2rem;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dairy-header {
+        font-size: 1.8rem;
+        padding: 30px;
+    }
+
+    .dairy-content {
+        width: 100%;
+    }
+
+    .dairy-description {
+        font-size: 0.8rem;
+    }
+
+    .dairy-btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}

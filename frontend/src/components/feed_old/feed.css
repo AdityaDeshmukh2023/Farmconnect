@@ -1,0 +1,116 @@
+.feedleft {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    
+    height: calc(100vh - 40px); 
+    box-sizing: border-box; 
+}
+
+
+
+/* Posts Section (Middle) */
+.feedWrapperLeft {
+    flex: 3; 
+    max-width: 800px; 
+    /* background-color: #ffffff; Light background */
+    border-radius: 8px; /* Rounded corners */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow */
+    padding: 20px; 
+    height: calc(100vh); 
+    overflow-y: auto; 
+    margin: 0 20px; 
+    box-sizing: border-box; 
+    background-color: transparent;
+}
+
+  
+.createButton {
+    right: 20px;
+    background: linear-gradient(45deg, #99c34d, #31e409);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .createButton:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  }
+
+.feedRight {
+    flex: 1; 
+    max-width: 300px; 
+    height: calc(100vh - 100px); 
+   
+    border-radius: 8px; 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow */
+    padding: 20px; 
+    overflow-y: auto; 
+    position: sticky; 
+    top: 80px; 
+    box-sizing: border-box; 
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179); 
+    border-radius: 4px; 
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 1024px) {
+    .feedleft {
+        flex-direction: column; 
+    }
+
+    .sidebar,
+    .feedWrapperLeft,
+    .feedRight {
+        max-width: 100%; 
+        margin: 0; 
+        padding: 15px; 
+    }
+
+    .feedWrapperLeft {
+        margin: 20px 0; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedleft {
+        padding: 15px; 
+    }
+
+    .sidebar,
+    .feedWrapperLeft,
+    .feedRight {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px; 
+    }
+
+    .feedWrapperLeft {
+        margin: 10px 0; 
+    }
+}

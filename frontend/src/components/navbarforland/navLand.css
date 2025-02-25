@@ -1,0 +1,120 @@
+/* Global */
+.landing-page *:not(i) {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.landing-page{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Navbar */
+.landing-page .navbar {
+    height: 60px;
+    background-color: #2D6A4F; /* Dark forest green */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.landing-page .nav-logo, .mainlogo {
+    height: 50px;
+    width: 100px;
+}
+
+.landing-page .nav-logo .mainlogo {
+    background-image: url('../../../public/assets/logo.png'); /* Path to the logo in the public folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landing-page .nav-search {
+    display: flex;
+    align-items: center;
+    background-color: #B7E4C7; /* Light mint green */
+    border-radius: 4px;
+    height: 40px;
+    width: 40%; /* Adjusted width */
+}
+
+.landing-page .search-select {
+    background-color: #D8F3DC; /* Pale green */
+    border: none;
+    padding: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.landing-page .search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.landing-page .search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white; /* Ensure the icon stands out */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer; /* Add pointer to indicate it's clickable */
+}
+
+.landing-page .search-icon i {
+    color: #1B4332; /* Dark green for the icon itself */
+}
+
+.signInClick{
+    cursor: pointer;
+}
+
+.landing-page i {
+    font-style: normal;
+    font-size: inherit;
+    color: inherit;
+}
+
+.landing-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.landing-page a:hover {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-page .nav-search {
+        flex-direction: column;
+        width: 60%;
+        margin: 10px 0;
+    }
+
+    .landing-page .box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .landing-page .panel {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .landing-page .hero-section {
+        height: 250px;
+    }
+}

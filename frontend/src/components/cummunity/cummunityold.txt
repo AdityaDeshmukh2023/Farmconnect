@@ -1,0 +1,41 @@
+.feed {
+    flex: 5.5;
+    height: calc(100vh - 80px); /* Occupies full height minus header */
+    overflow-y: scroll; /* Scrollable when content overflows */
+    display: flex;
+    flex-direction: column; /* Stack posts vertically */
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    background-color: #f9f9f9; /* Optional background for better readability */
+}
+
+::-webkit-scrollbar {
+    width: 6px; /* Thin scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+    border-radius: 3px;
+}
+
+.feedWrapper {
+    width: 100%;
+    max-width: 600px; /* Restricts feed width for consistent layout */
+    padding: 10px 20px; /* Adds padding around posts */
+    margin-top: 20px;
+}
+
+
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .feedWrapper {
+        padding: 10px;
+        max-width: 100%;
+    }
+}

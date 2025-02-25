@@ -1,0 +1,298 @@
+/* Global */
+.landing-page *:not(i) {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+.landing-page{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Navbar */
+.landing-page .navbar {
+    height: 60px;
+    background-color: #2D6A4F; /* Dark forest green */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+
+.landing-page .nav-logo, .logo {
+    height: 50px;
+    width: 100px;
+}
+
+.landing-page .nav-logo .logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.landing-page .nav-search {
+    display: flex;
+    align-items: center;
+    background-color: #B7E4C7; /* Light mint green */
+    border-radius: 4px;
+    height: 40px;
+    width: 40%; /* Adjusted width */
+}
+
+.landing-page .search-select {
+    background-color: #D8F3DC; /* Pale green */
+    border: none;
+    padding: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.landing-page .search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.landing-page .search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* background-color: #52B788; Lively green */
+    color: white; /* Ensure the icon stands out */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer; /* Add pointer to indicate it's clickable */
+}
+
+.landing-page .search-icon i {
+    color: #1B4332; /* Dark green for the icon itself */
+}
+
+/* Panel */
+.landing-page .panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #40916C; /* Medium green */
+    padding: 10px 20px;
+    color: white;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+.landing-page .panel-ops p {
+    margin-left: 15px;
+    display: inline;
+}
+
+.landing-page .panel-all {
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Section */
+.landing-page .hero-section {
+    height: 380px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 10px;
+}
+
+.landing-page .hero-msg {
+    background-color: #F4F1DE; /* Soft neutral yellow */
+    color: #2D6A4F;
+    height: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.landing-page .hero-msg a {
+    color: #007F5F;
+    margin-left: 5px;
+}
+
+/* Shop Section */
+.landing-page .shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F7FFF7; /* Very light green */
+    padding: 20px 0;
+}
+
+.landing-page .box {
+    background-color: white;
+    width: 23%;
+    margin: 15px 0;
+    padding: 20px 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.landing-page .box:hover {
+    transform: scale(1.05);
+}
+
+.landing-page .box-img {
+    height: 200px;
+    background-size: contain; /* Ensure images fit inside the box */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image within the box */
+}
+
+.landing-page .box-content h2 {
+    color: #2D6A4F;
+    margin-bottom: 10px;
+}
+
+.landing-page .box-content p {
+    color: #1B4332;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.landing-page footer {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.landing-page .foot-panel1 {
+    background-color: #006D77;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.landing-page .foot-panel2 {
+    background-color: #2D6A4F;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.landing-page .foot-panel2 ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.landing-page .foot-panel2 ul p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.landing-page .foot-panel2 ul a {
+    display: block;
+    color: #B7E4C7;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.landing-page .foot-panel2 ul a:hover {
+    text-decoration: underline;
+}
+
+.landing-page .foot-panel3 {
+    background-color: #1B4332;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+.landing-page .foot-panel3 .logo {
+    background-image: url('/public/assets/logo.png'); /* Add the footer logo image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100px;
+}
+
+.landing-page .foot-panel4 {
+    background-color: #006D77;
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.landing-page .pages {
+    padding-bottom: 10px;
+}
+
+.landing-page .copyright {
+    padding-top: 5px;
+}
+.landing-page i {
+    font-style: normal; /* Ensures the icon isn't treated as italic text */
+    font-size: inherit; /* Use the parent font size, or set a specific size */
+    color: inherit; /* Inherits the text color, or set a specific color */
+}
+.landing-page a {
+    color: inherit; /* Inherits the color of the parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+.landing-page a:hover {
+    text-decoration: none; /* Optional: Add underline on hover for better UX */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-page .nav-search {
+        flex-direction: column;
+        width: 60%; /* Adjusted width for medium screens */
+        margin: 10px 0;
+    }
+
+    .landing-page .box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .landing-page .panel {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .landing-page .hero-section {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-page .box {
+        width: 100%;
+    }
+
+    .landing-page .panel {
+        flex-direction: column;
+    }
+
+    .landing-page .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}

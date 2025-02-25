@@ -1,0 +1,233 @@
+
+.crop-prediction-page {
+    font-family: 'Arial', sans-serif;
+    /* margin: 0; */
+    padding: 0;
+    background-color: #f4faf5;
+    color: #333;
+   
+}
+
+/* Hero Section */
+.crop-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ecfdf5;
+    text-align: left;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.crop-content h1 {
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+
+.crop-content p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.crop-hero-image {
+    max-width: 40%;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Input Section */
+.crop-input-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.crop-input-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.crop-input-container h2 {
+    color: #27ae60;
+    margin-bottom: 1rem;
+}
+
+.crop-input-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.crop-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.crop-input-group label {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 0.9rem;
+}
+
+.crop-input-group input {
+    padding: 0.6rem;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.crop-input-group input:focus {
+    border-color: #1e8e50;
+}
+
+.crop-submit-button {
+    grid-column: span 2; /* Button spans two columns */
+    padding: 0.7rem 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crop-submit-button:hover {
+    background-color: #1e8e50;
+    height: 30px;
+}
+
+/* Results Section */
+.crop-results-section {
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.crop-results .crop-result-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.crop-results .crop-result-card:hover {
+    transform: scale(1.05);
+}
+
+.crop-results .crop-result-card i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: #27ae60;
+}
+
+.crop-results .crop-result-card p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .crop-hero {
+        padding: 1.5rem;
+    }
+
+    .crop-hero-image {
+        max-width: 50%;
+    }
+
+    .crop-input-container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .crop-input-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .crop-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .crop-input-form {
+        grid-template-columns: 1fr; /* Stack inputs in a single column */
+    }
+
+    .crop-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crop-hero-image {
+        max-width: 70%; /* Increased to ensure responsiveness */
+    }
+
+    .crop-content h1 {
+        font-size: 2rem;
+    }
+
+    .crop-input-container {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .crop-hero {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .crop-hero-image {
+        max-width: 80%;
+    }
+
+    .crop-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .crop-input-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .crop-input-group input {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .crop-submit-button {
+        padding: 0.7rem 1rem;
+    }
+
+    .crop-results .crop-result-card {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

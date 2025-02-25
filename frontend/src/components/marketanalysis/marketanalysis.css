@@ -1,0 +1,314 @@
+/* General Styles */
+.market{
+  margin: 0;
+  top: 0;
+
+}
+.market-analysis-wrapper {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9f4;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+}
+
+/* Hero Section */
+.market-analysis-hero {
+  background-color: #e0f7e9;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 2px solid #28a745;
+  margin-bottom: 20px;
+}
+
+.market-analysis-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.market-analysis-hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Filters Section */
+.market-analysis-filters {
+  padding: 20px;
+  background-color: #e9f7e9;
+  border-bottom: 2px solid #28a745;
+  margin-bottom: 20px;
+}
+
+.market-analysis-filter-form {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.market-analysis-filter-form label {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.market-analysis-filter-form select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #28a745;
+  width: 200px;
+}
+
+.market-analysis-filter-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Prices Section */
+.market-analysis-prices {
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #28a745;
+  margin-bottom: 20px;
+}
+
+.market-analysis-prices h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #28a745;
+}
+
+.market-analysis-prices table {
+  width:  1380px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.market-analysis-prices th,
+.market-analysis-prices td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.market-analysis-prices th {
+  background-color: #f4f4f4;
+  font-size: 1.2rem;
+}
+
+.market-analysis-prices td {
+  background-color: #fff;
+}
+
+.market-analysis-prices tr:hover {
+  background-color: #d1f7d1;
+}
+
+.market-analysis-prices td:last-child {
+  padding-right: 20px;
+}
+
+.market-analysis-prices td,
+.market-analysis-prices th {
+  font-size: 1rem;
+}
+
+/* Chart Styling */
+.market-analysis-prices canvas {
+  max-width: 1380px;
+  margin: 20px 0;
+}
+
+.market-analysis-prices .line-chart {
+  width:  1400px;
+  height: 300px;
+  background-color: #d9f9d9;
+}
+
+/* News Section */
+.market-analysis-news {
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #28a745;
+}
+
+.market-analysis-news h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #28a745;
+}
+
+.market-analysis-news ul {
+  list-style: none;
+  padding: 0;
+}
+
+.market-analysis-news li {
+  margin-bottom: 15px;
+}
+
+.market-analysis-news a {
+  font-size: 1.1rem;
+  color: #28a745;
+  text-decoration: none;
+}
+
+.market-analysis-news a:hover {
+  text-decoration: underline;
+}
+
+.market-analysis-news p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Loading Message */
+.loading-message {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+/* Buttons */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus {
+  outline: 3px solid #007bff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .market-analysis-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .market-analysis-hero p {
+    font-size: 1.1rem;
+  }
+
+  .market-analysis-filter-form {
+    justify-content: space-between;
+  }
+
+  .market-analysis-filter-form select {
+    font-size: 0.9rem;
+    width: 180px;
+  }
+
+  .market-analysis-prices table {
+    font-size: 14px;
+  }
+
+  .market-analysis-prices th,
+  .market-analysis-prices td {
+    padding: 10px;
+  }
+
+  .market-analysis-news h2 {
+    font-size: 1.8rem;
+  }
+
+  .market-analysis-news a {
+    font-size: 1rem;
+  }
+
+  .market-analysis-news p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .market-analysis-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .market-analysis-hero p {
+    font-size: 1rem;
+  }
+
+  .market-analysis-filter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .market-analysis-filter-form select {
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .market-analysis-prices table {
+    font-size: 12px;
+  }
+
+  .market-analysis-prices th,
+  .market-analysis-prices td {
+    padding: 8px;
+  }
+
+  .market-analysis-news h2 {
+    font-size: 1.5rem;
+  }
+
+  .market-analysis-news a {
+    font-size: 1rem;
+  }
+
+  .market-analysis-news p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .market-analysis-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .market-analysis-hero p {
+    font-size: 0.9rem;
+  }
+
+  .market-analysis-filter-form select {
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .market-analysis-prices table {
+    font-size: 10px;
+  }
+
+  .market-analysis-prices th,
+  .market-analysis-prices td {
+    padding: 6px;
+  }
+
+  .market-analysis-news h2 {
+    font-size: 1.2rem;
+  }
+
+  .market-analysis-news a {
+    font-size: 0.9rem;
+  }
+
+  .market-analysis-news p {
+    font-size: 0.8rem;
+  }
+}
